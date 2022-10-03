@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>송수지_계산기만들기</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="header">
+          <div class="header__icon">
+            <p>계산기</p>
+            <div class="icon">
+              <span>ㅡ</span>
+              <span>ㅁ</span>
+              <span>x</span>
+            </div>
+          </div>
+          <div class="header__hamburger__btn">
+            <span class="material-icons"> menu </span>
+            <p>프로그래머</p>
+          </div>
+        </div>
+        <!-- //header -->
+        <div class="screen">
+          <div class="screen__value"></div>
+          <div class="launching">
+            <div id="result"></div>
+          </div>
+          <!-- //launching -->
+        </div>
+        <!-- //screen -->
+        <div class="menu">
+          <div class="main__menu">
+            <span class="material-icons"> apps </span>
+            <span class="material-icons"> grain </span>
+            <span>QWORD</span>
+            <span>MS</span>
+            <span>M<span class="material-icons"> arrow_drop_down </span></span>
+          </div>
+          <!-- //main__menu -->
+          <div class="sub__menu">
+            <div>
+              <span class="material-icons power"> power </span>
+              <p>비트</p>
+              <span class="material-icons"> expand_more </span>
+            </div>
+            <div>
+              <p>비트 시프트</p>
+              <span class="material-icons"> expand_more </span>
+            </div>
+          </div>
+          <!-- //sub__menu -->
+        </div>
+        <!-- //menu -->
+        <div id="display"></div>
+        <div class="button__contents">
+          <div class="button">A</div>
+          <div class="button gray">&#171;</div>
+          <div class="button gray">&#187;</div>
+          <div class="button gray btnC">CE</div>
+          <div class="button gray">
+            <span class="material-icons"> backspace </span>
+          </div>
+          <div class="button">B</div>
+          <div class="button gray">&#40;</div>
+          <div class="button gray">&#41;</div>
+          <div class="button gray">&#37;</div>
+          <div class="button gray">&#47;</div>
+          <div class="button">C</div>
+          <div class="button">7</div>
+          <div class="button">8</div>
+          <div class="button">9</div>
+          <div class="button gray">*</div>
+          <div class="button">D</div>
+          <div class="button">4</div>
+          <div class="button">5</div>
+          <div class="button">6</div>
+          <div class="button gray">-</div>
+          <div class="button">E</div>
+          <div class="button">1</div>
+          <div class="button">2</div>
+          <div class="button">3</div>
+          <div class="button gray">+</div>
+          <div class="button">F</div>
+          <div class="button">+&#47;-</div>
+          <div class="button">0</div>
+          <div class="button">.</div>
+          <div class="button blue">&#61;</div>
+        </div>
+        <!-- //button__contents -->
+      </div>
+    </div>
+    <!-- //wrapper -->
+
+    <!-- script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

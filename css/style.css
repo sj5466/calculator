@@ -1,0 +1,191 @@
+:root {
+  --wihte: #fff;
+  --background: #e1e2e2;
+  --menu-color: #bebebe;
+  --btn-sub: #e7e7e7;
+  --btn-main-1: #f2f2f2;
+  --btn-main-2: #fbfbfb;
+  --blue: #80b2d9;
+  --blue2: #0078d7;
+  --font: #000;
+  --hover-orange: #ed7547;
+  --hover-green: #3f8d46;
+}
+body {
+  background: var(--background);
+}
+/* layout */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5% 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  max-width: 28em;
+  border: 1px solid var(--font);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px -10px 20px var(--menu-color);
+}
+
+/* header */
+.header {
+  width: 28em;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.header__icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 1em;
+  max-height: 2em;
+}
+.header__icon p {
+  font-size: 1.4em;
+}
+.header__icon .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header__icon .icon span {
+  font-size: 1.4em;
+  padding-right: 0.2em;
+}
+.header__icon .icon span:nth-child(1) {
+  padding-bottom: 10%;
+}
+.header__icon .icon span:nth-child(2) {
+  padding-top: 5%;
+  font-size: 1.5em;
+}
+.header__icon .icon span:nth-child(3) {
+  padding-right: 0;
+}
+.header__hamburger__btn {
+  display: flex;
+  align-items: center;
+}
+.header__hamburger__btn {
+  max-height: 1.3em;
+}
+.header__hamburger__btn span {
+  padding-right: 0.5em;
+  cursor: pointer;
+}
+.header__hamburger__btn p {
+  font-size: 1.5em;
+}
+
+/* screen */
+.screen {
+  min-height: 10em;
+  padding: 1em;
+  overflow: hidden;
+}
+.screen__value {
+  min-height: 5em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 1.4em;
+}
+
+/*** menu ***/
+/* main__menu */
+.main__menu {
+  padding: 0 1em;
+  max-height: 2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.main__menu > span {
+  padding: 0.5em;
+}
+.main__menu > span:nth-child(1) {
+  position: relative;
+  color: var(--blue2);
+}
+.main__menu > span:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.25em;
+  width: 100%;
+  height: 2px;
+  background: var(--blue2);
+}
+.main__menu > span:nth-child(5) {
+  display: flex;
+  align-items: center;
+  color: var(--menu-color);
+}
+
+/* sub__menu */
+.sub__menu {
+  display: flex;
+  padding: 0 1em;
+  background: var(--btn-sub);
+}
+.sub__menu div {
+  display: flex;
+  align-items: center;
+}
+.sub__menu div span {
+  cursor: pointer;
+}
+.sub__menu div:nth-child(1) {
+  margin-right: 2em;
+}
+.sub__menu div:nth-child(1) .power {
+  transform: rotate(-90deg);
+}
+
+/* button__contents */
+.button__contents {
+  display: grid;
+  gap: 0.3em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+  padding: 0 1em 1em;
+  background: var(--btn-sub);
+}
+.button__contents > div {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: var(--btn-main-2);
+  text-align: center;
+  line-height: 3.5em;
+  position: relative;
+}
+.button__contents > div > span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.button__contents .gray {
+  background: var(--btn-main-1);
+}
+.button__contents .blue {
+  background: var(--blue);
+}
+.button__contents > div:hover {
+  background: var(--hover-orange);
+  color: var(--wihte);
+}
+.button__contents .gray:hover {
+  background: var(--hover-green);
+  color: var(--wihte);
+}
+.button__contents .blue:hover {
+  background: var(--blue2);
+  color: var(--wihte);
+}
